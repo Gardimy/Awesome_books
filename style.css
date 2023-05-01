@@ -16,7 +16,8 @@ label {
   text-align: right;
 }
 
-input, select {
+input,
+select {
   width: 200px;
   padding: 5px;
   margin-bottom: 10px;
