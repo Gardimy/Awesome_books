@@ -6,8 +6,13 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  text-align: center;
+}
+
 form {
   margin-bottom: 20px;
+  text-align: center;
 }
 
 label {
@@ -27,3 +32,4 @@ button {
   margin: 3px auto;
   padding: 5px 10px;
 }
+ 
