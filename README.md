@@ -30,9 +30,8 @@ A Microverse exercise to use animation on a website
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
-# 📖Capstone Project<a name="about-project"></a>
-Capstone project This project was a requirement of module one, where we learned HTML, CSS and JavaScript, also the importance of git workflows following best practices of committing early and often. The use of linters to ensure code quality follows the HTML and CSS best practices. It is based on specific settings and requirements to ensure proper structure and best practices. By cloning this repo and running npm install we will have a basic Capstone project with properly configured linters, eslint and the correct initial file structure.
-
+# 📖Aweesome books<a name="about-project"></a>
+In this project, I build a basic website that allows users to add/remove books from a list. I achieve that by using JavaScript objects and arrays. I also dynamically modify the DOM and add basic events.. The use of linters to ensure code quality follows the Javascript best practices.
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -66,14 +65,6 @@ Capstone project This project was a requirement of module one, where we learned 
       - name: ESLint Report
 
 <!-- LIVE DEMO -->
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- [Live Demo Link](https://gardimy.github.io/Gardimy-project/)
-
-<!-- Presentation of the Capstone -->
-## 🚀 Video <a name="Presentation"></a>
-
-- [Video Presentation Link](https://www.loom.com/share/5aeaad2512b94418b4ba02715231964c)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -133,12 +124,6 @@ To run the linters before committing any changes to your code, execute the follo
 
 <!-- CONTRIBUTING -->
 
-## 🤝 Contributing <a name="contributing"></a>
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](https://github.com/Gardimy/Gardimy-project/issues/2).
-
 <!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
@@ -149,7 +134,7 @@ Feel free to check the [issues page](https://github.com/Gardimy/Gardimy-project/
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> I would like to thank [Cindy Shin](https://www.behance.net/adagio07) for Preparing this guideline which help me build my Website.
+> I would like to thank [microverse](https://www.microverse.org/) for teaching me this Skills
 <!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
