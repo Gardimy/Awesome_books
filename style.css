@@ -32,4 +32,9 @@ button {
   margin: 3px auto;
   padding: 5px 10px;
 }
- 
+
+#book-list {
+  text-align: center;
+  font-weight: 700;
+  color: blue;
+}
