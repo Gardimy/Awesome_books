@@ -30,3 +30,26 @@
     <script src="book.js"></script>
   </body>
 </html>
+
+<!-- 
+const removeBookForm = document.getElementById('remove-book-form');
+      const removeTitle = document.getElementById('remove-title');
+      books.forEach(book => {
+        const titleOption = document.createElement('option');
+        titleOption.value = book.title;
+        titleOption.innerText = book.title;
+        removeTitle.appendChild(titleOption);
+      });
+      removeBookForm.addEventListener('submit', event => {
+        event.preventDefault();
+        const selectedTitle = removeTitle.value;
+        removeBook(selectedTitle);
+        displayBooks();
+        removeTitle.innerHTML = '';
+        books.forEach(book => {
+          const titleOption = document.createElement('option');
+          titleOption.value = book.title;
+          titleOption.innerText = book.title;
+          removeTitle.appendChild(titleOption);
+        });
+      }); -->

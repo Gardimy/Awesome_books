@@ -24,6 +24,7 @@ input, select {
 
 button {
   display: block;
-  margin: 3px auto;
   padding: 5px 10px;
+  margin: 10px;
+  margin-left: 10%;
 }
