@@ -8,25 +8,35 @@ h1 {
 
 form {
   margin-bottom: 20px;
+  text-align: center;
 }
 
 label {
   display: inline-block;
-  width: 60px;
+  width: 40px;
   text-align: right;
+  margin-right: 5%;
 }
 
 input,
 select {
   width: 200px;
-  padding: 5px;
-  margin-left: 5%;
+  padding: 10px;
+  padding-left: 10px;
+  margin-left: 0;
   margin-bottom: 10px;
+  margin-right: 7%;
 }
 
 button {
   display: block;
   margin: 10px;
-  margin-left: 10%;
+  margin-left: 46%;
   padding: 5px 10px;
+
 }
+
+#book-list {
+  text-align: center;
+}
+
