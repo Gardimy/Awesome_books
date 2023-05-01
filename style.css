@@ -6,8 +6,13 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  text-align: center;
+}
+
 form {
   margin-bottom: 20px;
+  text-align: center;
 }
 
 label {
@@ -28,4 +33,10 @@ button {
   padding: 5px 10px;
   margin: 10px;
   margin-left: 10%;
+}
+
+#book-list {
+  text-align: center;
+  font-weight: 700;
+  color: blue;
 }
