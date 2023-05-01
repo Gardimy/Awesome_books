@@ -1,18 +1,13 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family:'poppins', sans-serif;
 }
 
 h1 {
   text-align: center;
 }
 
-h2 {
-  text-align: center;
-}
-
 form {
   margin-bottom: 20px;
-  text-align: center;
 }
 
 label {
@@ -25,18 +20,13 @@ input,
 select {
   width: 200px;
   padding: 5px;
+  margin-left: 5%;
   margin-bottom: 10px;
 }
 
 button {
   display: block;
-  padding: 5px 10px;
   margin: 10px;
   margin-left: 10%;
-}
-
-#book-list {
-  text-align: center;
-  font-weight: 700;
-  color: blue;
+  padding: 5px 10px;
 }

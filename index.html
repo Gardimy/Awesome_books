@@ -8,7 +8,7 @@
     <title>Awesome books</title>
   </head>
   <body>
-    <h1>Awesome books</h1>
+     <h1>Book Collection</h1>
     <div id="book-list"></div>
     <form id="add-book-form">
       <h2>Add a Book</h2>
@@ -23,7 +23,7 @@
     <form id="remove-book-form">
       <h2>Remove a Book</h2>
       <label for="remove-title">Title:</label>
-      <select id="remove-title" name="remove-title"></select>
+      <select id="remove-title" name="remove-title">Author:</select>
       <br>
       <button type="submit">Remove</button>
     </form>
@@ -31,25 +31,3 @@
   </body>
 </html>
 
-<!-- 
-const removeBookForm = document.getElementById('remove-book-form');
-      const removeTitle = document.getElementById('remove-title');
-      books.forEach(book => {
-        const titleOption = document.createElement('option');
-        titleOption.value = book.title;
-        titleOption.innerText = book.title;
-        removeTitle.appendChild(titleOption);
-      });
-      removeBookForm.addEventListener('submit', event => {
-        event.preventDefault();
-        const selectedTitle = removeTitle.value;
-        removeBook(selectedTitle);
-        displayBooks();
-        removeTitle.innerHTML = '';
-        books.forEach(book => {
-          const titleOption = document.createElement('option');
-          titleOption.value = book.title;
-          titleOption.innerText = book.title;
-          removeTitle.appendChild(titleOption);
-        });
-      }); -->
