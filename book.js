@@ -1,4 +1,4 @@
-let books = JSON.parse(localStorage.getItem('books')) || [];
+const books = JSON.parse(localStorage.getItem('books')) || [];
 
 function addBook(title, author) {
   const id = Date.now();
@@ -7,7 +7,8 @@ function addBook(title, author) {
 }
 
 function removeBook(id) {
-  books = books.filter((book) => book.id !== id);
+  const index = books.findIndex((book) => book.id === Number(id));
+  books.splice(index, 1);
   localStorage.setItem('books', JSON.stringify(books));
 }
 
@@ -19,6 +20,13 @@ function displayBooks() {
     bookItem.classList.add('book');
     bookItem.innerHTML = `${book.title} by ${book.author}<button class="remove-title" data-id="${book.id}">Remove</button>`;
     bookList.appendChild(bookItem);
+
+    const removeButton = bookItem.querySelector('.remove-title');
+    removeButton.addEventListener('click', (event) => {
+      const { id } = event.target.dataset;
+      removeBook(id);
+      displayBooks();
+    });
   });
 }
 
@@ -34,10 +42,10 @@ addBookForm.addEventListener('submit', (event) => {
   addBookForm.reset();
 });
 
-const removeBtns = document.querySelectorAll('.remove-title');
-removeBtns.forEach((btn) => {
-  btn.addEventListener('click', () => {
-    const { id } = btn.dataset;
+const removeButtons = document.querySelectorAll('.remove-title');
+removeButtons.forEach((button) => {
+  button.addEventListener('click', (event) => {
+    const { id } = event.target.dataset;
     removeBook(id);
     displayBooks();
   });
