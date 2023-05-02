@@ -37,7 +37,6 @@ addBookForm.addEventListener('submit', (event) => {
 const removeBtns = document.querySelectorAll('.remove-title');
 removeBtns.forEach((btn) => {
   btn.addEventListener('click', () => {
-    console.log('Clicked me!');
     const { id } = btn.dataset;
     removeBook(id);
     displayBooks();

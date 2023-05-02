@@ -6,6 +6,12 @@ function addBook(title, author) {
   localStorage.setItem('books', JSON.stringify(books));
 }
 
+function removeBook(id) {
+  const index = books.findIndex((book) => book.id === Number(id));
+  books.splice(index, 1);
+  localStorage.setItem('books', JSON.stringify(books));
+}
+
 function displayBooks() {
   const bookList = document.getElementById('book-list');
   bookList.innerHTML = '';
@@ -15,7 +21,6 @@ function displayBooks() {
     bookItem.innerHTML = `${book.title} by ${book.author}<button class="remove-title" data-id="${book.id}">Remove</button>`;
     bookList.appendChild(bookItem);
 
-    /*Add event listener to enable remove button after click it once*/
     const removeButton = bookItem.querySelector('.remove-title');
     removeButton.addEventListener('click', (event) => {
       const { id } = event.target.dataset;
@@ -36,13 +41,6 @@ addBookForm.addEventListener('submit', (event) => {
   displayBooks();
   addBookForm.reset();
 });
-
-/* Add function to remove book from books*/
-function removeBook(id) {
-  const index = books.findIndex((book) => book.id === Number(id));
-  books.splice(index, 1);
-  localStorage.setItem('books', JSON.stringify(books));
-}
 
 const removeButtons = document.querySelectorAll('.remove-title');
 removeButtons.forEach((button) => {
