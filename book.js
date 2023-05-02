@@ -1,12 +1,13 @@
 let books = JSON.parse(localStorage.getItem('books')) || [];
 
 function addBook(title, author) {
-  books.push({title, author, id: Date.now()});
+  const id = Date.now();
+  books.push({title, author, id});
   localStorage.setItem('books', JSON.stringify(books));
 }
 
-function removeBook(title) {
-  books = books.filter(book => book.title !== title);
+function removeBook(id) {
+  books = books.filter(book => book.id !== id);
   localStorage.setItem('books', JSON.stringify(books));
 }
 
@@ -16,7 +17,7 @@ function displayBooks() {
   books.forEach(book => {
     const bookItem = document.createElement('div');
     bookItem.classList.add('book');
-    bookItem.innerHTML = `${book.title} by ${book.author}<button id="remove-title" data-index="${book}">Remove</button>`;
+    bookItem.innerHTML = `${book.title} by ${book.author}<button class="remove-title" data-id="${book.id}">Remove</button>`;
     bookList.appendChild(bookItem);
   });
 }
@@ -33,9 +34,12 @@ addBookForm.addEventListener('submit', event => {
   addBookForm.reset();
 });
 
-const removeButton = document.getElementById("remove-button");
-removeButton.addEventListener("click", () => {
-  const removeTitle = document.getElementById('remove-title').value;
-  removeBook(removeTitle);
-  document.getElementById("removeTitle").value = "";
+const removeBtns = document.querySelectorAll(".remove-title");
+removeBtns.forEach(btn => {
+  btn.addEventListener("click", () => {
+    console.log('Clicked me!')
+    const id = btn.dataset.id;
+    removeBook(id);
+    displayBooks();
+  });
 });
