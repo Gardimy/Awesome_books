@@ -11,19 +11,11 @@ form {
   text-align: center;
 }
 
-label {
-  display: inline-block;
-  width: 40px;
-  text-align: right;
-  margin-right: 5%;
-}
-
-input,
-select {
+input {
   width: 200px;
   padding: 10px;
   padding-left: 10px;
-  margin-left: 0;
+  margin-left: 8%;
   margin-bottom: 10px;
   margin-right: 7%;
 }
@@ -31,7 +23,7 @@ select {
 button {
   display: block;
   margin: 10px;
-  margin-left: 46%;
+  margin-left: 48%;
   padding: 5px 10px;
 }
 

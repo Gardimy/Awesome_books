@@ -16,7 +16,7 @@ function displayBooks() {
   books.forEach(book => {
     const bookItem = document.createElement('div');
     bookItem.classList.add('book');
-    bookItem.innerHTML = `${book.title} by ${book.author}<button id="remove" data-index="${book}">Remove</button>`;
+    bookItem.innerHTML = `${book.title} by ${book.author}<button id="remove-title" data-index="${book}">Remove</button>`;
     bookList.appendChild(bookItem);
   });
 }
@@ -33,25 +33,9 @@ addBookForm.addEventListener('submit', event => {
   addBookForm.reset();
 });
 
-const removeBookForm = document.getElementById('remove-book-form');
-const removeTitle = document.getElementById('remove-title');
-books.forEach(book => {
-  const titleOption = document.createElement('option');
-  titleOption.value = book.title;
-  titleOption.innerText = book.title;
-  removeTitle.appendChild(titleOption);
-});
-
-removeBookForm.addEventListener('submit', event => {
-  event.preventDefault();
-  const selectedTitle = removeTitle.value;
-  removeBook(selectedTitle);
-  displayBooks();
-  removeTitle.innerHTML = '';
-  books.forEach(book => {
-    const titleOption = document.createElement('option');
-    titleOption.value = book.title;
-    titleOption.innerText = book.title;
-    removeTitle.appendChild(titleOption);
-  });
+const removeButton = document.getElementById("remove-button");
+removeButton.addEventListener("click", () => {
+  const removeTitle = document.getElementById('remove-title').value;
+  removeBook(removeTitle);
+  document.getElementById("removeTitle").value = "";
 });
