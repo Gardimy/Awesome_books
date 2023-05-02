@@ -32,7 +32,7 @@ class Library {
     this.books.forEach((book) => {
       const bookItem = document.createElement('div');
       bookItem.classList.add('book');
-      bookItem.innerHTML = `${book.title} by ${book.author}<button class="remove-title" data-id="${book.id}">Remove</button>`;
+      bookItem.innerHTML = `<div class ="Book-title">${book.title} by ${book.author}<div><button class="remove-title" data-id="${book.id}">Remove</button></div></div>`;
       bookList.appendChild(bookItem);
 
       const removeButton = bookItem.querySelector('.remove-title');
