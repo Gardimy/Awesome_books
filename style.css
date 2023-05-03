@@ -55,3 +55,11 @@ button {
 .book:nth-child(odd) {
   background-color: rgb(212, 209, 209);
 }
+
+.underlined {
+  width: 5%;
+  height: 0.5px;
+  border-top: 3px gray groove;
+  margin-left: 47.5%;
+  margin-top: 20px;
+}
