@@ -17,7 +17,7 @@ class Book {
   }
 
   removeBook(id) {
-    const books = this.getAllBooks();
+    const books = Book.getAllBooks();
     const index = books.findIndex((book) => book.id === Number(id));
     if (index !== -1) {
       books.splice(index, 1);
