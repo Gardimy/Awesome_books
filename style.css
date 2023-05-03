@@ -29,8 +29,7 @@ input {
 button {
   display: block;
   padding: 1px 10px;
-  margin-left: 2%;
-  margin-bottom: 1px;
+  margin-right: 5px;
   border: 3px black solid;
 }
 
@@ -39,8 +38,20 @@ button {
 }
 
 #book-list {
-  width: 25%;
-  height: 25px;
-  border: 2px blue solid;
-  margin-left: 38%;
+  width: 40%;
+  border: 2px black solid;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.book {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.book:nth-child(odd) {
+  background-color: rgb(212, 209, 209);
 }
