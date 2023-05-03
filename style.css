@@ -28,17 +28,19 @@ input {
 
 button {
   display: block;
-  padding: 6px 10px;
+  padding: 1px 10px;
   margin-left: 2%;
-  margin-bottom: 10px;
+  margin-bottom: 1px;
+  border: 3px black solid;
 }
+
 .button-add {
   margin-left: 49%;
 }
 
 #book-list {
-  width: 20%;
-  height: 120px;
-  border: 5px black solid;
-  margin-left: 40%;
+  width: 25%;
+  height: 25px;
+  border: 2px black solid;
+  margin-left: 38%;
 }
