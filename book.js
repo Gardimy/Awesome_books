@@ -9,14 +9,14 @@ class Book {
     return JSON.parse(localStorage.getItem('books')) || [];
   }
 
-  addBook(title, author) {
+  static addBook(title, author) {
     const book = new Book(title, author);
     const books = Book.getAllBooks();
     books.push(book);
     localStorage.setItem('books', JSON.stringify(books));
   }
 
-  removeBook(id) {
+  static removeBook(id) {
     const books = Book.getAllBooks();
     const index = books.findIndex((book) => book.id === Number(id));
     if (index !== -1) {
@@ -38,7 +38,7 @@ class Book {
       const removeButton = bookItem.querySelector('.remove-title');
       removeButton.addEventListener('click', (event) => {
         const { id } = event.target.dataset;
-        this.removeBook(id);
+        Book.removeBook(id);
         this.displayBooks();
       });
     });
@@ -53,7 +53,7 @@ addBookForm.addEventListener('submit', (event) => {
   event.preventDefault();
   const title = document.getElementById('title').value;
   const author = document.getElementById('author').value;
-  book.addBook(title, author);
+  Book.addBook(title, author);
   book.displayBooks();
   addBookForm.reset();
 });
@@ -62,7 +62,7 @@ const bookList = document.getElementById('book-list');
 bookList.addEventListener('click', (event) => {
   if (event.target.classList.contains('remove-title')) {
     const { id } = event.target.dataset;
-    book.removeBook(id);
+    Book.removeBook(id);
     book.displayBooks();
   }
 });
