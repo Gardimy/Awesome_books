@@ -11,7 +11,7 @@ class Book {
 
   addBook(title, author) {
     const book = new Book(title, author);
-    const books = this.getAllBooks();
+    const books = Book.getAllBooks();
     books.push(book);
     localStorage.setItem('books', JSON.stringify(books));
   }
@@ -26,7 +26,7 @@ class Book {
   }
 
   displayBooks() {
-    const books = this.getAllBooks();
+    const books = Book.getAllBooks();
     const bookList = document.getElementById('book-list');
     bookList.innerHTML = '';
     books.forEach((book) => {
