@@ -8,11 +8,6 @@ class Book {
   }
 }
 
-class Library {
-  constructor() {
-    this.books = books.map((book) => new Book(book.title, book.author, book.id));
-  }
-
   addBook(title, author) {
     const id = Date.now();
     const book = new Book(title, author, id);
@@ -42,7 +37,6 @@ class Library {
       });
     });
   }
-}
 
 const library = new Library();
 
