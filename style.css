@@ -53,7 +53,7 @@ nav .active {
   padding: 5px;
 }
 
-h1 {
+h1, h2 {
   text-align: center;
 }
 
@@ -126,4 +126,8 @@ footer p {
 
 .dBlock {
   display: block;
+}
+
+.contact_section {
+  
 }
