@@ -86,11 +86,11 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 
-`git clone https://github.com/Gardimy/Mobile-first`
+`https://github.com/Gardimy/Awesome_books`
 
 or
 
-`git clone https://github.com/Gardimy/Mobile-first` <-- _Only if you have [SSH keys configured](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) on your GitHub account_.
+`https://github.com/Gardimy/Awesome_books` <-- _Only if you have [SSH keys configured](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) on your GitHub account_.
 
 ### Install:
 
@@ -140,7 +140,5 @@ To run the linters before committing any changes to your code, execute the follo
 ## 📝 License <a name="license"></a>
 
 This project is [MIT license](https://choosealicense.com/licenses/mit/) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

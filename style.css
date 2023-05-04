@@ -13,20 +13,55 @@ form {
 
 input {
   width: 200px;
+  height: 20px;
   padding: 10px;
   padding-left: 10px;
   margin-left: 8%;
   margin-bottom: 10px;
   margin-right: 7%;
+  font-size: 1.5rem;
+}
+
+.Book-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 button {
   display: block;
-  margin: 10px;
-  margin-left: 48%;
-  padding: 5px 10px;
+  padding: 1px 10px;
+  margin-right: 5px;
+  border: 3px black solid;
+}
+
+.button-add {
+  margin-left: 53.5%;
 }
 
 #book-list {
-  text-align: center;
+  width: 40%;
+  border: 2px black solid;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.book {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.book:nth-child(odd) {
+  background-color: rgb(212, 209, 209);
+}
+
+.underlined {
+  width: 5%;
+  height: 0.5px;
+  border-top: 3px gray groove;
+  margin-left: 47.5%;
+  margin-top: 20px;
 }
