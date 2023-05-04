@@ -109,13 +109,6 @@ button {
   background-color: rgb(212, 209, 209);
 }
 
-.underlined {
-  width: 5%;
-  height: 0.5px;
-  border-top: 3px gray groove;
-  margin-top: 20px;
-}
-
 footer {
   width: 100%;
   border: 2px solid black;
@@ -125,4 +118,12 @@ footer {
 
 footer p {
   margin-left: 2%;
+}
+
+.dNone {
+  display: none;
+}
+
+.dBlock {
+  display: block;
 }
