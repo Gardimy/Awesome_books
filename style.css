@@ -2,6 +2,49 @@ body {
   font-family: 'poppins', sans-serif;
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  -webkit-box-shadow: 0 0 30px 3px red;
+  box-shadow: 0 0 25px 3px green;
+  align-items: center;
+  padding: 0 25px 0;
+}
+
+nav .option {
+  display: flex;
+  flex-direction: row;
+}
+
+nav .option .list {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 23px;
+  text-align: left;
+}
+
+nav .option .list:hover {
+  background-color: greenyellow;
+  cursor: pointer;
+  transform: translateX(10px);
+  text-decoration: underline;
+}
+
+nav .active {
+  color: blueviolet;
+  font-weight: 500;
+}
+
+.infos {
+  list-style: none;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
 h1 {
   text-align: center;
 }
