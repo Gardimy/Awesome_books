@@ -1,24 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Awesome books</title>
-  </head>
-  <body>
-    <h1>Awesome books</h1>
-    <div id="book-list"></div>
-    <div class="underlined"></div>
-    <form id="add-book-form">
-      <h2>Add a New Book</h2>
-      <input type="text" id="title" name="title" placeholder="title" required>
-      <br>
-      <input type="text" id="author" name="author" placeholder="author" required>
-      <br>
-      <button class="button-add" type="submit">Add</button>
-    </form>
-    <script src="book.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Awesome books</title>
+</head>
+
+<body>
+  <div class="container">
+    <nav>
+      <div class="title">
+        <h3>Awesome Books</h3>
+      </div>
+
+      <ul class="option">
+        <li id="list" class="list active">List</li>
+        <li id="addBook" class="list">Add new</li>
+        <li id="contact" class="list">Contact</li>
+      </ul>
+
+    </nav>
+
+    <section class="list_container">
+
+      <div class="list_title">
+        <h1>Awesome books</h1>
+      </div>
+      <div id="book-list"></div>
+    </section>
+
+    <section class="form_section dNone">
+
+      <div class="form_title">
+        <h2>Add a New Book</h2>
+      </div>
+
+      <form id="add-book-form">
+        <input type="text" id="title" name="title" placeholder="title" required>
+        <br>
+        <input type="text" id="author" name="author" placeholder="author" required>
+        <br>
+        <button class="button-add" type="submit">Add</button>
+      </form>
+
+    </section>
+
+    <section class="contact_section dNone">
+      <div class="contact_inner">
+        <h2>Contact information</h2>
+        <p>Do have any question or you just want to say "Hello"?<span>
+        </span>You can reach out to us!</p>
+        <ul class="contact">
+          <li>Our e-mail: <a href="#">sajdv@mail.com</a></li>
+          <li>Our phone number: <a href="#">+50934691634</a></li>
+          <li>Our address: Microverse online school for Web Developers.</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer> <p>Copyright Awsome books 2023</p> </footer>
+  </div>
+
+
+
+
+  <script src="book.js"></script>
+</body>
+
 </html>
