@@ -5,10 +5,10 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
-  -webkit-box-shadow: 0 0 30px 3px red;
-  box-shadow: 0 0 25px 3px green;
+  -webkit-box-shadow: 0 0 10px 3px red;
+  box-shadow: 0 0 10px 3px green;
   align-items: center;
-  padding: 0 25px 0;
+  padding: 0 40px 0;
 }
 
 nav .option {
@@ -107,4 +107,10 @@ button {
   border-top: 3px gray groove;
   margin-left: 47.5%;
   margin-top: 20px;
+}
+
+footer {
+  width: 100%;
+  -webkit-box-shadow: 0 0 30px 3px #6a69696d;
+  box-shadow: 0 0 30px 3px #65616163;
 }
