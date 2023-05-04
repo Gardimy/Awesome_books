@@ -2,7 +2,7 @@ body {
   font-family: 'poppins', sans-serif;
 }
 
-#container {
+.list_container {
   padding: 50px 0;
   margin: 5% auto;
   flex-direction: column;
