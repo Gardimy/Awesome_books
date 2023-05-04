@@ -34,10 +34,6 @@ class Books {
       });
     });
   }
-
-  getBooks() {
-    return this.books;
-  }
 }
 
 const books = new Books();
